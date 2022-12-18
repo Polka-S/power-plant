@@ -3,24 +3,22 @@
   padding: 0;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Noto Sans", serif;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
+  font-weight: 700;
 }
 
 .main-cover {
   padding-bottom: 42px;
+  margin-bottom: 150px;
   max-width: 1921px;
   background-image: url(../images/bg.jpg);
   background-size: cover;
@@ -37,7 +35,7 @@ h4 {
 }
 .main-cover .info p {
   font-family: "Noto Sans", serif;
-  font-weight: 400;
+  font-weight: 40o;
   font-size: 18px;
   line-height: 25px;
 }
@@ -56,4 +54,32 @@ h4 {
   width: 166px;
   display: flex;
   justify-content: space-between;
+}
+
+.services h3 {
+  color: #868585;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 60px;
+}
+.services .services-content {
+  display: flex;
+  justify-content: space-between;
+  color: #303030;
+  margin-bottom: 150px;
+}
+.services .services-content .text-services {
+  max-width: 510px;
+}
+.services .services-content .text-services h4 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.services .services-content .text-services p {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
