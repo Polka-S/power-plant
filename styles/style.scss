@@ -6,7 +6,7 @@ $NotoSans: 'Noto Sans', serif;
 
 @mixin text-18 {
     font-family: $NotoSans;
-    font-weight: 40o;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
 }
@@ -15,6 +15,10 @@ $NotoSans: 'Noto Sans', serif;
     font-family: $NotoSans;
     font-weight: 400;
     font-size: 14px;
+}
+
+.clear {
+    clear: both;
 }
 
 * {
@@ -33,6 +37,19 @@ h3,
 h4 {
     font-family: $NotoSans;
     font-weight: 700;
+}
+
+h3 {
+    color: $gray;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 60px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
 }
 
 .main-cover {
@@ -79,13 +96,6 @@ h4 {
 }
 
 .services {
-    h3 {
-        color: $gray;
-        font-size: 24px;
-        line-height: 33px;
-        margin-bottom: 60px;
-    }
-
     .services-content {
         display: flex;
         // flex-wrap: wrap;
@@ -96,12 +106,6 @@ h4 {
         .text-services {
             max-width: 510px;
 
-            h4 {
-                font-size: 18px;
-                line-height: 25px;
-                margin-bottom: 15px;
-            }
-
             p {
                 @include text-14;
                 line-height: 19px;
@@ -109,4 +113,119 @@ h4 {
             }
         }
     }
+}
+
+.rate-buy {
+    .sliders {
+        max-width: 510px;
+        float: left;
+
+        #content-1 {
+            .block-with-image {
+                margin-bottom: 100px;
+
+                .block-left {
+                    float: left;
+                }
+
+                .block-right {
+                    margin-left: 275px;
+
+                    p {
+                        color: $black;
+                        margin-bottom: 75px;
+                        @include text-14;
+                        line-height: 19px;
+                    }
+
+                    a {
+                        width: 40px;
+                    }
+
+                    a:last-child {
+                        margin-left: 22px;
+                    }
+
+                }
+            }
+
+            .block-only-content {
+                h4 {
+                    margin-bottom: 5px;
+                    color: $black;
+                }
+
+                p {
+                    @include text-14;
+                    color: $black;
+                    line-height: 19px;
+                }
+
+                .right {
+                    float: left;
+                    max-width: 235px;
+                }
+
+                .left {
+                    margin-left: 275px;
+                }
+
+                .top-info {
+                    margin-bottom: 19px;
+                }
+            }
+        }
+    }
+
+    .description {
+        max-width: 600px;
+        margin-left: 600px;
+
+        p {
+            @include text-18;
+            font-weight: 700;
+            line-height: 25px;
+            margin-bottom: 17px;
+        }
+    }
+}
+
+
+.sliders>input[type="radio"] {
+    display: none;
+}
+
+.sliders>input[type="radio"]:checked+label {
+    border-bottom: 1px solid $gray;
+}
+
+.sliders>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    padding: 10px 15px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+    display: block;
+    padding: 0;
+}
+
+.sliders>label {
+    @include text-18;
+    line-height: 25px;
+    cursor: pointer;
+    margin-left: 40px;
+    display: inline-block;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 120px;
+    padding-bottom: 5px;
+
+}
+
+.sliders>label:first-of-type {
+    margin-left: 0;
 }
