@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background-color: #E5E5E5;
+}
+
 .clear {
   clear: both;
 }
@@ -44,7 +48,7 @@ h4 {
   text-align: center;
   color: #fff;
 }
-.main-cover .logotype {
+.main-cover .logo {
   padding-top: 76px;
   margin-bottom: 160px;
 }
@@ -55,7 +59,6 @@ h4 {
   font-family: "Noto Sans", serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
 }
 .main-cover .info h1 {
   margin-bottom: 3px;
@@ -67,7 +70,7 @@ h4 {
   font-size: 42px;
   line-height: 57px;
 }
-.main-cover .foot {
+.main-cover .social {
   margin: 0 auto;
   width: 166px;
   display: flex;
@@ -91,6 +94,9 @@ h4 {
   margin-bottom: 50px;
 }
 
+.rate-buy {
+  margin-bottom: 150px;
+}
 .rate-buy .sliders {
   max-width: 510px;
   float: left;
@@ -147,7 +153,6 @@ h4 {
   font-family: "Noto Sans", serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
   font-weight: 700;
   line-height: 25px;
   margin-bottom: 17px;
@@ -179,7 +184,6 @@ h4 {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  line-height: 25px;
   cursor: pointer;
   margin-left: 40px;
   display: inline-block;
@@ -195,4 +199,241 @@ h4 {
 
 .sliders > label:first-of-type {
   margin-left: 0;
+}
+
+.section-with-bg {
+  background-image: url(../images/bg2.jpg);
+  margin-bottom: 150px;
+}
+.section-with-bg p {
+  font-family: "Noto Sans", serif;
+  margin: 0 auto;
+  max-width: 673px;
+  font-size: 42px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 57px;
+  text-align: center;
+  padding: 128px 0 144px;
+}
+
+.our-clients {
+  margin-bottom: 182px;
+}
+.our-clients h3 {
+  margin-bottom: 60px;
+}
+.our-clients .content-our-clients {
+  display: flex;
+}
+.our-clients .content-our-clients .descriptions {
+  max-width: 600px;
+  margin-left: 91px;
+}
+.our-clients .content-our-clients .descriptions h4 {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #303030;
+  margin-bottom: 30px;
+}
+.our-clients .content-our-clients .descriptions ul {
+  list-style-type: none;
+}
+.our-clients .content-our-clients .descriptions ul li {
+  margin-left: 50px;
+  margin-bottom: 15px;
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+}
+.our-clients .content-our-clients .descriptions ul li:last-child {
+  margin-bottom: 124px;
+}
+.our-clients .content-our-clients .descriptions p {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #303030;
+  margin-left: 50px;
+}
+
+.five-steps {
+  margin-bottom: 140px;
+  display: flex;
+}
+.five-steps .descriptions {
+  max-width: 510px;
+  margin-right: 90px;
+}
+.five-steps .descriptions h3 {
+  margin-bottom: 60px;
+}
+.five-steps .descriptions h4 {
+  margin-bottom: 2px;
+  color: #303030;
+}
+.five-steps .descriptions p {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.five-steps .descriptions p.numbering {
+  color: #868585;
+  margin-bottom: 11px;
+}
+.five-steps .descriptions p.step {
+  color: #303030;
+  margin-bottom: 30px;
+}
+.five-steps .descriptions p.step:last-child {
+  margin-bottom: 0;
+}
+
+.form-footer {
+  background-image: url(../images/bg3.png);
+}
+.form-footer .content {
+  display: flex;
+  margin-bottom: 150px;
+}
+.form-footer .content h3 {
+  padding-top: 70px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.form-footer .content p {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+.form-footer .content .content-form {
+  max-width: 510px;
+  margin-right: 91px;
+}
+.form-footer .content .content-form input {
+  width: 510px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 11px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.form-footer .content .content-form input:last-child {
+  margin-bottom: 119px;
+}
+.form-footer .content .content-form input::-moz-placeholder {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  line-height: 19px;
+}
+.form-footer .content .content-form input:-ms-input-placeholder {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  line-height: 19px;
+}
+.form-footer .content .content-form input::placeholder {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  line-height: 19px;
+}
+.form-footer .content .content-form input::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .content-form input::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .content-form input:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .content-form input:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .content-form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .content-form input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .content-form input:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .content-form input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-footer .content .contacts {
+  max-width: 600px;
+}
+.form-footer .content .contacts p {
+  margin-bottom: 30px;
+}
+.form-footer .content .contacts p:last-child {
+  margin-bottom: 0;
+}
+.form-footer .content .contacts .telephones {
+  margin-bottom: 30px;
+}
+.form-footer .content .contacts .telephones a {
+  color: #fff;
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+}
+.form-footer .content .contacts .telephones a:hover {
+  text-decoration: underline;
+}
+.form-footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 49px;
+}
+.form-footer .footer p {
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+.form-footer .footer .social {
+  width: 166px;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
