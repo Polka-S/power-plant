@@ -22,12 +22,10 @@
             <p>Зеленый тариф для дома и бизнеса</p>
             <h1>Солнечная электростанция</h1>
             <h2>с доходом от 1000 $ в месяц</h2>
-            
+
             <div class="header-btn">
                 <div class="btn">
-                    <a href="#">
-                        <img src="images/button.svg" alt="">
-                    </a>
+                    <img src="images/button.svg" alt="">
                 </div>
             </div>
         </div>
@@ -203,13 +201,9 @@
                     <li>Срок службы: 25-30 лет</li>
                 </ul>
 
-                <div class="btn">
-                    <a href="#">
-                        <img src="images/кнопка.svg" alt="">
-                    </a>
-                    <!-- <span>записаться на консультацию</span> -->
+                <div class="btn-2">
+                    <img src="images/кнопка.svg" alt="">
                 </div>
-                <!-- <p>записаться на консультацию</p> -->
             </div>
         </div>
     </div>
@@ -282,7 +276,6 @@
                 <div class="btn">
                     <a href="#"><img src="images/кнопка3.svg" alt=""></a>
                 </div>
-                <!-- <p>оставить заявку</p> -->
             </div>
 
             <div class="contacts">
@@ -331,3 +324,24 @@
 </body>
 
 </html>
+
+
+<script>
+    const $button = document.querySelector("div.btn");
+    const $form = document.querySelector("div.form-footer");
+    const $button2 = document.querySelector("div.btn-2");
+
+    $button.addEventListener('click', e => {
+        $form.scrollIntoView({
+            block: 'nearest',
+            behavior: 'smooth',
+        })
+    })
+
+    $button2.addEventListener('click', e => {
+        $form.scrollIntoView({
+            block: 'nearest',
+            behavior: 'smooth',
+        })
+    })
+</script>
